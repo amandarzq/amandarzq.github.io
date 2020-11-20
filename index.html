@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whac-a-Mouse</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+
+  <div id="playScreen">
+    <div class="popUp">
+      <h2>Latest Score:<br>
+        <span id="finalScore">0</span>
+      </h2>
+      <div id="currentScore"></div>
+      <div class="button">
+        <button id="button" onclick="play()">Play Game
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <header>
+    <h1>Whac-a-Mouse</h1>
+  </header>
+
+  <section class="container">
+    <div class="cursor"></div>
+    <div class="box">
+      <div class="mouse" onclick="smack()"></div>
+    </div>
+    <div class="box">
+      <div class="mouse" onclick="smack()"></div>
+    </div>
+    <div class="box">
+      <div class="mouse" onclick="smack()"></div>
+    </div>
+    <div class="box">
+      <div class="mouse" onclick="smack()"></div>
+    </div>
+    <div class="box">
+      <div class="mouse" onclick="smack()"></div>
+    </div>
+    <div class="box">
+      <div class="mouse" onclick="smack()"></div>
+    </div>
+    <div class="box">
+      <div class="mouse" onclick="smack()"></div>
+    </div>
+    <div class="box">
+      <div class="mouse" onclick="smack()"></div>
+    </div>
+  </section>
+
+  <div class="score">
+    <p>Score: <span id="score">0</span></p>
+  </div>
+
+
+  <audio id="gameover" src="gamestart.wav" type="audio/wav"></audio>
+  <audio id="smacksound" src="punch.wav" type="audio/wav"></audio>
+  <audio id="tambahscore" src="scoreplus.wav" type="audio/wav"></audio>
+  <audio id="catscream" src="catscream.wav" type="audio/wav"></audio>
+  <audio id="catmeow" src="catmeow.mp3" type="audio/mp3"></audio>
+
+
+  <script id="smack" src="javascript.js"></script>
+
+</body>
+
+</html>
